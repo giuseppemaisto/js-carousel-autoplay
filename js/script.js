@@ -129,3 +129,8 @@ function auto(){
 
 
 }
+
+//bonus 
+document.getElementById('stop').addEventListener("click", function(){
+    clearInterval(autoPlay);
+})
