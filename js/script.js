@@ -10,6 +10,8 @@ const imagesArray = [
 //Creiamo dinamicamente i div con le immagini del carosello
 let itemsContent = '';
 
+
+
 for(let i = 0; i < imagesArray.length; i++){
     itemsContent += `<div class="item">
         <img src="./img/${imagesArray[i]}">
@@ -39,6 +41,8 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
 next.addEventListener('click', function(){
+   
+   
     //verifico l'elemento attivo (itemActive)
    
     //incremento il suo valore di 1
@@ -60,6 +64,7 @@ next.addEventListener('click', function(){
    circles[itemActive].classList.add('active');
    
 });
+
 //CON BONUS 1
 
 prev.addEventListener('click', function(){
