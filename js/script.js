@@ -131,6 +131,13 @@ function auto(){
 }
 
 //bonus 
-document.getElementById('stop').addEventListener("click", function(){
+document.getElementById('play').addEventListener('click', function(){
+    autoPlay = setInterval(auto, 2000);
+
+    
+})
+document.getElementById('stop').addEventListener('click', function(){
     clearInterval(autoPlay);
+
+    
 })
